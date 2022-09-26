@@ -1,8 +1,12 @@
 import './App.css';
-import { LoadingPage } from './containers/loading';
 
-function App() {
-	return <LoadingPage></LoadingPage>;
-}
+import { BrowserRouter } from 'react-router-dom';
+import { AppRoutes } from './AppRoutes';
 
-export default App;
+export const App = () => {
+	return (
+		<BrowserRouter>
+			<AppRoutes />
+		</BrowserRouter>
+	);
+};

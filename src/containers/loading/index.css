@@ -1,0 +1,32 @@
+#loading-page {
+	height: 100vh;
+	width: 100vw;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(8, 103, 7, 1) 61%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#loading {
+	fill: transparent;
+	stroke: white;
+	stroke-width: 3;
+	stroke-dasharray: 550;
+	stroke-dashoffset: 550;
+	animation: draw 3s linear alternate infinite;
+}
+@keyframes draw {
+	from {
+		stroke-dashoffset: 550;
+	}
+	to {
+		stroke-dashoffset: 0;
+		fill: white;
+	}
+}
