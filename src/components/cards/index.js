@@ -15,7 +15,7 @@ export const Featured = () => {
 	let info = items[index];
 
 	return (
-		<div className='container featured-container '>
+		<div className=' featured-container '>
 			<h2 className='featured-title'>Featured Projects</h2>
 
 			<div className='row w-100'>
