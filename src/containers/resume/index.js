@@ -6,12 +6,18 @@ export const Resume = () => {
 	return (
 		<motion.div
 			initial={{
-				width: 0,
-
+				opacity: 0,
+				clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
+			}}
+			animate={{
+				opacity: 1,
 				clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0 100%)',
 			}}
-			animate={{ width: '100%' }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+			exit={{
+				opacity: 0,
+				clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
+				transition: { duration: 0.5 },
+			}}
 		>
 			resume
 		</motion.div>

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Hero } from '../../components/hero';
 import { AboutMe } from '../../components/about me section';
 import { Logos } from '../../components/logo';
+import { Featured } from '../../components/cards';
 
 export const Home = () => {
 	return (
@@ -26,6 +27,8 @@ export const Home = () => {
 			<Hero></Hero>
 			<AboutMe></AboutMe>
 			<Logos></Logos>
+			<hr></hr>
+			<Featured></Featured>
 		</motion.div>
 	);
 };

@@ -4,6 +4,7 @@ import { LoadingPage } from './containers/loading';
 import { Resume } from './containers/resume';
 
 import { AnimatePresence } from 'framer-motion';
+import { Featured } from './components/cards';
 
 export const AppRoutes = () => {
 	const location = useLocation();
@@ -14,6 +15,7 @@ export const AppRoutes = () => {
 				<Route path='/resume' element={<Resume />} />
 				<Route path='/' element={<LoadingPage />} />
 				<Route path='/home' element={<Home />} />
+				<Route path='card' element={<Featured />} />
 			</Routes>
 		</AnimatePresence>
 	);

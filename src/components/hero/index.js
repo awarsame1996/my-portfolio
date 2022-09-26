@@ -5,14 +5,17 @@ import { TypeAnimation } from 'react-type-animation';
 export const Hero = () => {
 	return (
 		<div
-			class='p-5 text-center bg-image'
+			className='p-5 text-center bg-image'
 			style={{
 				backgroundImage:
 					"url('https://images.unsplash.com/photo-1663970206579-c157cba7edda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80')",
 				height: '60vh',
 			}}
 		>
-			<div class='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+			<div
+				className='mask'
+				style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
+			>
 				<nav className=' navbar navbar-expand-lg navbar-dark '>
 					<div className='container-fluid'>
 						<a className='navbar-brand' href='/'>
@@ -52,19 +55,19 @@ export const Hero = () => {
 						</div>
 					</div>
 				</nav>
-				<div class='d-flex justify-content-center align-items-center h-100'>
-					<div class='text-white'>
+				<div className='d-flex justify-content-center align-items-center h-100'>
+					<div className='text'>
 						<TypeAnimation
 							sequence={[
 								'Hi 👋! ', // Types 'One'
-								3000, // Waits 1s
+								1500, // Waits 1s
 								'I am Abdilatif Warsame', // Deletes 'One' and types 'Two'
-								4000, // Waits 2s
+								2000, // Waits 2s
 								'I am Abdilatif Warsame, a full stack web developer', // Types 'Three' without deleting 'Two'
 								() => {
 									return (
 										<a
-											class='btn btn-outline-light btn-lg'
+											className='btn btn-outline-light btn-lg'
 											href='#!'
 											role='button'
 										>

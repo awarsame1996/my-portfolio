@@ -1,0 +1,141 @@
+.project-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 50rem;
+}
+.featured-container {
+	margin-top: 10rem;
+	width: 100vw;
+	margin-left: 0;
+	padding: 0;
+	height: fit-content;
+}
+.featured-title {
+	text-transform: capitalize;
+	margin-bottom: 4rem;
+}
+
+.carousell {
+	width: 100%;
+	overflow-x: hidden;
+
+	position: relative;
+	height: 50rem;
+	overflow-y: hidden;
+}
+.img-card {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: auto;
+	height: 30rem;
+	object-fit: contain;
+	cursor: pointer;
+	z-index: 0;
+	opacity: 0;
+
+	transition: 500ms;
+}
+.card--active {
+	opacity: 1;
+	transform: scale(1);
+	z-index: 99;
+}
+
+.card--left {
+	transform: translateY(-125%) scale(0.5);
+	transition: 500ms;
+	opacity: 0.3;
+}
+
+.card--right {
+	transform: translateY(125%) scale(0.5);
+	transition: 500ms;
+	opacity: 0.3;
+}
+
+.skill-container {
+	margin-top: 5rem;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.skill-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 2rem;
+}
+
+.skills-card img {
+	height: auto;
+	object-fit: contain;
+}
+.scroll-btn-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.scroll-btn {
+	border: none;
+	background-color: transparent;
+}
+.scroll-btn i {
+	font-size: 3rem;
+}
+.scroll-btn i :hover {
+	color: gray;
+}
+@media screen and (max-width: 800px) {
+	.project-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 30rem;
+		margin: 0;
+		padding: 0;
+	}
+	.img-card {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		width: 18rem;
+		height: 20rem;
+		object-fit: cover;
+		cursor: pointer;
+		z-index: 0;
+		opacity: 0;
+
+		transition: 500ms;
+	}
+	.card--active {
+		opacity: 1;
+		transform: scale(1);
+		z-index: 99;
+	}
+
+	.card--left {
+		transform: translateX(-125%) scale(0.5);
+		transition: 500ms;
+		opacity: 0.3;
+	}
+
+	.card--right {
+		transform: translateX(125%) scale(0.5);
+		transition: 500ms;
+		opacity: 0.3;
+	}
+}
