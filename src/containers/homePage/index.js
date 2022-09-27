@@ -3,8 +3,10 @@ import './index.css';
 import { motion } from 'framer-motion';
 import { Hero } from '../../components/hero';
 import { AboutMe } from '../../components/about me section';
-import { Logos } from '../../components/logo';
+
 import { Featured } from '../../components/cards';
+import { FeaturedProjects } from '../../components/featured test';
+import { ContactSection } from '../../components/contactSection';
 
 export const Home = () => {
 	return (
@@ -26,9 +28,10 @@ export const Home = () => {
 		>
 			<Hero></Hero>
 			<AboutMe></AboutMe>
-			<Logos></Logos>
+
 			<hr></hr>
-			<Featured></Featured>
+			<FeaturedProjects />
+			<ContactSection />
 		</motion.div>
 	);
 };

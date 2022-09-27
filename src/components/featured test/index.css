@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/*Just the background stuff*/
+
+/*My hum... body.. yeah..*/
+body {
+	background-color: #353b3f;
+	font-family: 'Roboto', sans-serif;
+}
+.featured-section {
+	width: 50%;
+	overflow-x: hidden;
+
+	position: relative;
+	height: 50rem;
+	overflow-y: hidden;
+}
+/* The card */
+.card {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	height: 450px;
+	width: 900px;
+	-webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+
+	transition: 500ms;
+}
+.card--active {
+	opacity: 1;
+	transform: scale(1);
+	z-index: 99;
+}
+
+.card--left {
+	transform: translateY(-125%) scale(0.5);
+	transition: 500ms;
+	opacity: 0.3;
+}
+
+.card--right {
+	transform: translateY(125%) scale(0.5);
+	transition: 500ms;
+	opacity: 0.3;
+}
+
+/* Image on the left side */
+.thumbnail {
+	float: left;
+	position: relative;
+	left: 30px;
+	top: -30px;
+	height: 100%;
+	width: 530px;
+	-webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+}
+
+.left {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: auto;
+	width: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/* Right side of the card */
+.right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 600px;
+	margin-right: 20px;
+}
+
+h1 {
+	padding-top: 15px;
+	font-size: 1.3rem;
+	color: #4b4b4b;
+}
+.author {
+	background-color: #9ecaff;
+	height: 30px;
+	width: 110px;
+	border-radius: 20px;
+}
+
+.links {
+	padding-top: 8px;
+	text-align: center;
+	font-size: 0.8rem;
+	color: white;
+}
+.separator {
+	margin-top: 10px;
+	border: 1px solid #c3c3c3;
+}
+p {
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 0.95rem;
+	line-height: 150%;
+	color: #4b4b4b;
+}
+
+/* Those futur buttons */
+.skill-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+}
+
+.skill-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 2rem;
+	margin-right: 4rem;
+}
+.skills-card-info {
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 0.95rem;
+	line-height: 150%;
+	color: #4b4b4b;
+}
+
+.skills-card img {
+	height: auto;
+	object-fit: contain;
+}
+
+/* Floating action button */
+.fab {
+	position: absolute;
+	right: 50px;
+	bottom: -40px;
+	box-sizing: border-box;
+	padding-top: 18px;
+	background-color: #1875d0;
+	width: 80px;
+	height: 80px;
+	color: white;
+	text-align: center;
+	border-radius: 50%;
+	-webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+}

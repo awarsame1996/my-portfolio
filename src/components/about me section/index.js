@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.css';
-
+import { Logos } from '../logo';
 export const AboutMe = () => {
 	return (
-		<div className='container mt-5'>
+		<div className='about-container mt-5'>
 			<h3 className='text'> About Me</h3>
 			<div className='row gx-1 justify-content-around'>
 				<div className='col-md-6'></div>
@@ -19,6 +19,7 @@ export const AboutMe = () => {
 					</p>
 				</div>
 			</div>
+			<Logos></Logos>
 		</div>
 	);
 };

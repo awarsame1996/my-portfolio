@@ -1,144 +1,132 @@
-.project-info {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 50rem;
+:root {
+	--primary: #ffce00;
+	--secondary: #fe4880;
+	--dark: #212121;
+	--light: #f3f3f3;
 }
-.featured-container {
-	margin-top: 10rem;
-	width: 100vw;
-	margin-left: 0;
+
+* {
+	margin: 0;
 	padding: 0;
-	height: fit-content;
+}
+
+body {
+	font-family: montserrat, sans-serif;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.card {
+	margin: 100px auto 0;
+	width: 400px;
+	height: 600px;
+	perspective: 1000px;
+}
+
+.card__inner {
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	position: relative;
+}
+
+.card__inner.is-flipped {
+	transform: rotateY(180deg);
+}
+
+.card__face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: hidden;
+	border-radius: 16px;
+	box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+	background-image: linear-gradient(
+		to bottom right,
+		var(--primary),
+		var(--secondary)
+	);
 	display: flex;
-	flex-direction: column;
+	align-items: center;
 	justify-content: center;
 }
-.featured-title {
-	text-transform: capitalize;
-	margin-bottom: 4rem;
+
+.card__face--front h2 {
+	color: #fff;
+	font-size: 32px;
 }
 
-.carousell {
+.card__face--back {
+	background-color: var(--light);
+	transform: rotateY(180deg);
+}
+
+.card__content {
 	width: 100%;
-	overflow-x: hidden;
-
-	position: relative;
-	height: 50rem;
-	overflow-y: hidden;
+	height: 100%;
 }
-.img-card {
+
+.card__header {
+	position: relative;
+	padding: 30px 30px 40px;
+}
+
+.card__header:after {
+	content: '';
+	display: block;
 	position: absolute;
 	top: 0;
+	left: 0;
 	right: 0;
 	bottom: 0;
-	left: 0;
-	margin: auto;
-	width: auto;
-	height: 20rem;
-	object-fit: contain;
-	cursor: pointer;
-	z-index: 0;
-	opacity: 0;
-
-	transition: 500ms;
-}
-.card--active {
-	opacity: 1;
-	transform: scale(1);
-	z-index: 99;
+	background-image: linear-gradient(
+		to bottom left,
+		var(--primary) 10%,
+		var(--secondary) 115%
+	);
+	z-index: -1;
+	border-radius: 0px 0px 50% 0px;
 }
 
-.card--left {
-	transform: translateY(-125%) scale(0.5);
-	transition: 500ms;
-	opacity: 0.3;
+.pp {
+	display: block;
+	width: 128px;
+	height: 128px;
+	margin: 0 auto 30px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 5px solid #fff;
+	object-fit: cover;
 }
 
-.card--right {
-	transform: translateY(125%) scale(0.5);
-	transition: 500ms;
-	opacity: 0.3;
+.card__header h2 {
+	color: #fff;
+	font-size: 32px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
 }
 
-.skill-container {
-	margin-top: 5rem;
-	overflow-x: hidden;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+.card__body {
+	padding: 30px;
 }
 
-.skill-card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	width: 2rem;
+.card__body h3 {
+	color: var(--dark);
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 15px;
 }
 
-.skills-card img {
-	height: auto;
-	object-fit: contain;
-}
-.scroll-btn-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-.scroll-btn {
-	border: none;
-	background-color: transparent;
-}
-.scroll-btn i {
-	font-size: 3rem;
-}
-.scroll-btn i :hover {
-	color: gray;
-}
-@media screen and (max-width: 800px) {
-	.project-info {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 30rem;
-		margin: 0;
-		padding: 0;
-	}
-	.img-card {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 0;
-		width: 18rem;
-		height: 20rem;
-		object-fit: cover;
-		cursor: pointer;
-		z-index: 0;
-		opacity: 0;
-
-		transition: 500ms;
-	}
-	.card--active {
-		opacity: 1;
-		transform: scale(1);
-		z-index: 99;
-	}
-
-	.card--left {
-		transform: translateX(-125%) scale(0.5);
-		transition: 500ms;
-		opacity: 0.3;
-	}
-
-	.card--right {
-		transform: translateX(125%) scale(0.5);
-		transition: 500ms;
-		opacity: 0.3;
-	}
+.card__body p {
+	color: var(--dark);
+	font-size: 18px;
+	line-height: 1.4;
 }
