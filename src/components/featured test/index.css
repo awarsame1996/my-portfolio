@@ -4,10 +4,31 @@
 
 /*My hum... body.. yeah..*/
 body {
-	background-color: #353b3f;
 	font-family: 'Roboto', sans-serif;
 }
+.featured-container {
+	background-color: #353b3f;
+}
+.featured-description {
+	float: right;
+}
+
+.section-title {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	font-size: 4.37rem;
+	font-weight: 600;
+	background-image: linear-gradient(to left, #553c9a, #b393d3);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+.section-text {
+	float: right;
+	margin-bottom: 2.5rem;
+}
 .featured-section {
+	float: left;
 	width: 50%;
 	overflow-x: hidden;
 
@@ -23,11 +44,11 @@ body {
 	bottom: 0;
 	left: 0;
 	margin: auto;
-	height: 450px;
-	width: 900px;
-	-webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+	height: 28.125rem;
+	width: 56.25rem;
+	-webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
 
 	transition: 500ms;
 }
@@ -53,13 +74,13 @@ body {
 .thumbnail {
 	float: left;
 	position: relative;
-	left: 30px;
-	top: -30px;
+	left: 1.875rem;
+	top: -1.875rem;
 	height: 100%;
-	width: 530px;
-	-webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+	width: 30.875rem;
+	-webkit-box-shadow: 0.625rem 0.625rem 3.75rem 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0.625rem 0.625rem 3.75rem 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0.625rem 0.625rem 3.75rem 0px rgba(0, 0, 0, 0.75);
 }
 
 .left {
@@ -78,35 +99,35 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-left: 600px;
-	margin-right: 20px;
+	margin-left: 37.5rem;
+	margin-right: 1.25rem;
 }
 
 h1 {
-	padding-top: 15px;
+	padding-top: 0.938rem;
 	font-size: 1.3rem;
 	color: #4b4b4b;
 }
 .author {
 	background-color: #9ecaff;
-	height: 30px;
-	width: 110px;
-	border-radius: 20px;
+	height: 1.875rem;
+	width: 6.875rem;
+	border-radius: 1.25rem;
 }
 
 .links {
-	padding-top: 8px;
+	padding-top: 0.5rem;
 	text-align: center;
 	font-size: 0.8rem;
 	color: white;
 }
 .separator {
-	margin-top: 10px;
+	margin-top: 0.625rem;
 	border: 1px solid #c3c3c3;
 }
 p {
 	text-align: justify;
-	padding-top: 10px;
+	padding-top: 0.625rem;
 	font-size: 0.95rem;
 	line-height: 150%;
 	color: #4b4b4b;
@@ -116,7 +137,7 @@ p {
 .skill-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -129,7 +150,7 @@ p {
 }
 .skills-card-info {
 	text-align: justify;
-	padding-top: 10px;
+	padding-top: 0.625rem;
 	font-size: 0.95rem;
 	line-height: 150%;
 	color: #4b4b4b;
@@ -143,17 +164,119 @@ p {
 /* Floating action button */
 .fab {
 	position: absolute;
-	right: 50px;
-	bottom: -40px;
+	right: 3.125rem;
+	bottom: -2.5rem;
 	box-sizing: border-box;
 	padding-top: 18px;
-	background-color: #1875d0;
+	background: rgb(179, 147, 211);
+	background: radial-gradient(
+		circle,
+		rgba(179, 147, 211, 1) 13%,
+		rgba(85, 60, 154, 1) 46%,
+		rgba(2, 0, 36, 1) 93%
+	);
 	width: 80px;
 	height: 80px;
 	color: white;
 	text-align: center;
 	border-radius: 50%;
-	-webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0.625rem 0.625rem 3.125rem 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0.625rem 0.625rem 3.125rem 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0.625rem 0.625rem 3.125rem 0px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 950px) {
+	.section-container {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.featured-section {
+		float: none;
+		width: 100%;
+		overflow-x: hidden;
+
+		position: relative;
+		height: 50rem;
+		overflow-y: hidden;
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		height: 19rem;
+		width: 30rem;
+	}
+	/* The card */
+
+	/* Image on the left side */
+	.thumbnail {
+		height: auto;
+		width: 17rem;
+		-webkit-box-shadow: 0.625rem 0.625rem 3.75rem 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0.625rem 0.625rem 3.75rem 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 0.625rem 0.625rem 3.75rem 0px rgba(0, 0, 0, 0.75);
+	}
+
+	.left {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: auto;
+		width: 100%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	/* Right side of the card */
+	.right {
+		margin: 0;
+		padding: 3rem;
+	}
+	h1 {
+		padding-top: 0.4664rem;
+		font-size: 0.65rem;
+		color: #4b4b4b;
+	}
+	.author {
+		background-color: #9ecaff;
+		height: 0.9125rem;
+		width: 3.4375rem;
+		border-radius: 0.625rem;
+	}
+
+	.links {
+		padding-top: 0.5rem;
+		text-align: center;
+		font-size: 0.4rem;
+		color: white;
+	}
+	.separator {
+		margin-top: 0.3725;
+		border: 1px solid #c3c3c3;
+	}
+	p {
+		text-align: justify;
+		padding-top: 0.3725;
+		font-size: 0.475rem;
+		line-height: 150%;
+		color: #4b4b4b;
+	}
+
+	.card--active {
+		opacity: 1;
+		transform: scale(1);
+		z-index: 99;
+	}
+
+	.card--left {
+		transform: translateX(-125%) scale(0.5);
+		transition: 500ms;
+		opacity: 0.3;
+	}
+
+	.card--right {
+		transform: translateX(125%) scale(0.5);
+		transition: 500ms;
+		opacity: 0.3;
+	}
 }

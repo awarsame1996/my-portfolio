@@ -4,7 +4,7 @@ import { Logos } from '../logo';
 export const AboutMe = () => {
 	return (
 		<div className='about-container mt-5'>
-			<h3 className='text'> About Me</h3>
+			<h3 className='section-title'> About Me</h3>
 			<div className='row gx-1 justify-content-around'>
 				<div className='col-md-6'></div>
 

@@ -58,6 +58,7 @@ export const Hero = () => {
 				<div className='d-flex justify-content-center align-items-center h-100'>
 					<div className='text'>
 						<TypeAnimation
+							className='text-white'
 							sequence={[
 								'Hi 👋! ', // Types 'One'
 								1500, // Waits 1s

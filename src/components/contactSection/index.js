@@ -1,31 +1,16 @@
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './index.css';
 
 export const ContactSection = () => {
 	AOS.init();
 	return (
-		<div className='contact-container mb-4 mt-2 '>
-			<div className=' contact-info   mb-5  '>
+		<div className='contact-container '>
+			<div className=' contact-info '>
 				<h1 data-aos='zoom-out-down' className='text-center'>
 					<strong>GET IN TOUCH</strong>
 				</h1>
-				<h5 data-aos='zoom-out-down' className=' mt-4 text-center '>
-					Whips Car Rental
-				</h5>
-
-				<h6 data-aos='fade-down' className='text-muted mt-4 text-center '>
-					Address: 163 Fordhouse Ln, Stirchley, Birmingham B30 3AG{' '}
-				</h6>
-				<h6 data-aos='fade-down' className='text-muted text-center mt-4 '>
-					Monday to Friday: Opens 9am to 5pm
-				</h6>
-				<h6 data-aos='fade-down' className='text-muted text-center mt-4 '>
-					Phone: 0121 272 7711
-				</h6>
-			</div>
-
-			<div className=' contact-info '>
 				<form className=''>
 					<div className='row mb-4'>
 						<div className='col'>

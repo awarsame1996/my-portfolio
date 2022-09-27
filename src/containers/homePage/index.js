@@ -4,9 +4,7 @@ import { motion } from 'framer-motion';
 import { Hero } from '../../components/hero';
 import { AboutMe } from '../../components/about me section';
 
-import { Featured } from '../../components/cards';
 import { FeaturedProjects } from '../../components/featured test';
-import { ContactSection } from '../../components/contactSection';
 
 export const Home = () => {
 	return (
@@ -31,7 +29,7 @@ export const Home = () => {
 
 			<hr></hr>
 			<FeaturedProjects />
-			<ContactSection />
+			{/* <ContactSection /> */}
 		</motion.div>
 	);
 };
