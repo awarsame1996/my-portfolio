@@ -32,11 +32,11 @@ export const FeaturedProjects = () => {
 						className = 'card card--left';
 					} else className = 'card';
 					return (
-						<div class={className}>
-							<div class='thumbnail'>
-								<img class='left' src={item.url} alt='project-img' />
+						<div className={className}>
+							<div className='thumbnail'>
+								<img className='left' src={item.url} alt='project-img' />
 							</div>
-							<div class='right'>
+							<div className='right'>
 								<h1>{item.title}</h1>
 								<div className='d-flex flex-row justify-content-between '>
 									<a
@@ -56,7 +56,7 @@ export const FeaturedProjects = () => {
 									</a>
 								</div>
 
-								<div class='separator'></div>
+								<div className='separator'></div>
 								<p>{item.description} ...</p>
 							</div>
 							<div className=' skill-container'>
@@ -73,10 +73,10 @@ export const FeaturedProjects = () => {
 									);
 								})}
 							</div>
-							<div class='fab'>
+							<div className='fab'>
 								<i
 									onClick={() => setIndex((index + 1) % items.length)}
-									class='fa fa-arrow-up fa-3x'
+									className='fa fa-arrow-up fa-3x'
 								>
 									{' '}
 								</i>
@@ -86,7 +86,7 @@ export const FeaturedProjects = () => {
 				})}
 			</div>
 			<div className='Featured-description'>
-				<h2 class='section-title'>featured Projects</h2>
+				<h2 className='section-title'>featured Projects</h2>
 				<div>
 					<TypeAnimation
 						sequence={[

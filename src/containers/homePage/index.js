@@ -3,8 +3,10 @@ import './index.css';
 import { motion } from 'framer-motion';
 import { Hero } from '../../components/hero';
 import { AboutMe } from '../../components/about me section';
+import { Logos } from '../../components/logo';
 
 import { FeaturedProjects } from '../../components/featured test';
+import { ProjectSection } from '../../components/card section';
 
 export const Home = () => {
 	return (
@@ -26,10 +28,10 @@ export const Home = () => {
 		>
 			<Hero></Hero>
 			<AboutMe></AboutMe>
-
+			<Logos></Logos>
 			<hr></hr>
 			<FeaturedProjects />
-			{/* <ContactSection /> */}
+			<ProjectSection />
 		</motion.div>
 	);
 };
