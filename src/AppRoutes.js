@@ -4,7 +4,6 @@ import { LoadingPage } from './containers/loading';
 import { Resume } from './containers/resume';
 
 import { AnimatePresence } from 'framer-motion';
-import { ProjectSection } from './components/card section';
 import { ProjectCards } from './components/cards';
 
 export const AppRoutes = () => {
@@ -16,8 +15,8 @@ export const AppRoutes = () => {
 				<Route path='/resume' element={<Resume />} />
 				<Route path='/' element={<LoadingPage />} />
 				<Route path='/home' element={<Home />} />
-				<Route path='card' element={<ProjectCards />} />
-				<Route path='cards' element={<ProjectSection />} />
+				<Route path='/card' element={<ProjectCards />} />
+				<Route path='/resume' element={<Resume />} />
 			</Routes>
 		</AnimatePresence>
 	);

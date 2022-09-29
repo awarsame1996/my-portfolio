@@ -16,7 +16,7 @@ export const FeaturedProjects = () => {
 	};
 
 	return (
-		<div className='section-container'>
+		<div id='projectss' className='section-container'>
 			<div className='featured-section'>
 				{items.map((item, i) => {
 					const indexLeft = mod(index - 1, items.length);

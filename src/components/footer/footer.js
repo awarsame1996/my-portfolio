@@ -29,13 +29,6 @@ export const Footer = () => {
 						<i className='fab fa-github fa-lg'></i>
 					</a>
 				</div>
-				© 2022 Copyright:
-				<a
-					className='text-reset fw-bold'
-					href='https://github.com/awarsame1996/whips-car-rental'
-				>
-					WhipsRental.com
-				</a>
 			</div>
 		</footer>
 	);

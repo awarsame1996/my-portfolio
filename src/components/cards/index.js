@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 export const ProjectCards = ({ item }) => {
-	const { title, url, description } = item;
+	const { title, url, description, live } = item;
 	const [isOpen, setisOpen] = useState(false);
 	let className = 'card__inner';
 	if (isOpen) {
@@ -35,7 +35,7 @@ export const ProjectCards = ({ item }) => {
 						<motion.div className='card-body '>
 							<p className='card-text content'>{description}</p>
 
-							<NeonButton></NeonButton>
+							<NeonButton live={live}></NeonButton>
 						</motion.div>
 					</div>
 				</div>

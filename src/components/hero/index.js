@@ -45,10 +45,10 @@ export const Hero = () => {
 								>
 									Home
 								</a>
-								<a className='nav-link ms-5' href='/vehicles'>
+								<a className='nav-link ms-5' href='#projectss'>
 									portfolio
 								</a>
-								<a className='nav-link ms-5' href='/'>
+								<a className='nav-link ms-5' href='/resume'>
 									resume
 								</a>
 							</div>

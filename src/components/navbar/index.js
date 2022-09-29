@@ -28,10 +28,8 @@ export const Navbar = () => {
 						>
 							Home
 						</a>
-						<a className='nav-link ms-5' href='/vehicles'>
-							portfolio
-						</a>
-						<a className='nav-link ms-5' href='/'>
+
+						<a className='nav-link ms-5' download='' href='/resume'>
 							resume
 						</a>
 					</div>

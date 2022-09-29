@@ -1,25 +1,17 @@
-import React from 'react';
 import './index.css';
-import { motion } from 'framer-motion';
+import { Navbar } from '../../components/navbar';
 
 export const Resume = () => {
 	return (
-		<motion.div
-			initial={{
-				opacity: 0,
-				clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
-			}}
-			animate={{
-				opacity: 1,
-				clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0 100%)',
-			}}
-			exit={{
-				opacity: 0,
-				clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
-				transition: { duration: 0.5 },
-			}}
-		>
-			resume
-		</motion.div>
+		<div className='resumePage'>
+			<Navbar />
+			<div className='resumeContainer'>
+				<iframe
+					className='resume'
+					src='https://drive.google.com/file/d/1Y-ORhZAGxTgPT0Qt1Smm6G1jJE_dA2Cx/preview'
+					allow='autoplay'
+				></iframe>
+			</div>
+		</div>
 	);
 };
